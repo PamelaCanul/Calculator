@@ -52,6 +52,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jButton19 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(244, 253, 251));
@@ -73,6 +74,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(89, 97, 104));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn2.png"))); // NOI18N
         jButton1.setText("=");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -83,6 +85,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 50, 50));
 
         jButton2.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(89, 97, 104));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton2.setText("C");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -93,16 +96,23 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
 
         jButton3.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(89, 97, 104));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
-        jButton3.setText("±");
+        jButton3.setText("^");
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton3.setFocusPainted(false);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1-Click.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 50, 50));
 
         jButton4.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(89, 97, 104));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton4.setText("%");
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -113,6 +123,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
 
         jButton5.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(89, 97, 104));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton5.setText("÷");
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -124,6 +135,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(89, 97, 104));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton6.setText("6");
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -134,6 +146,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 50, 50));
 
         jButton7.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(89, 97, 104));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton7.setText("+");
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -144,6 +157,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 50, 50));
 
         jButton8.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(89, 97, 104));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton8.setText("–");
         jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -154,6 +168,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 50, 50));
 
         jButton9.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(89, 97, 104));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn1.png"))); // NOI18N
         jButton9.setText("x");
         jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -164,6 +179,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 50, 50));
 
         jButton10.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(89, 97, 104));
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton10.setText("9");
         jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -174,6 +190,7 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 50, 50));
 
         jButton11.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(89, 97, 104));
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton11.setText("8");
         jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -185,6 +202,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton12.setBackground(new java.awt.Color(255, 255, 255));
         jButton12.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(89, 97, 104));
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton12.setText("7");
         jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -196,6 +214,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton13.setBackground(new java.awt.Color(255, 255, 255));
         jButton13.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(89, 97, 104));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton13.setText("3");
         jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -207,6 +226,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton14.setBackground(new java.awt.Color(255, 255, 255));
         jButton14.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(89, 97, 104));
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton14.setText("5");
         jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -218,6 +238,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton15.setBackground(new java.awt.Color(255, 255, 255));
         jButton15.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(89, 97, 104));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton15.setText("4");
         jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -228,7 +249,8 @@ public class CalculatorApp extends javax.swing.JFrame {
         jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 50, 50));
 
         jButton16.setBackground(new java.awt.Color(255, 255, 255));
-        jButton16.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton16.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 24)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(89, 97, 104));
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton16.setText(".");
         jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -236,10 +258,11 @@ public class CalculatorApp extends javax.swing.JFrame {
         jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton16.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton16.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3-click.png"))); // NOI18N
-        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 50, 50));
+        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 50, 50));
 
         jButton17.setBackground(new java.awt.Color(255, 255, 255));
         jButton17.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(89, 97, 104));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton17.setText("2");
         jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -251,6 +274,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton18.setBackground(new java.awt.Color(255, 255, 255));
         jButton18.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(89, 97, 104));
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton18.setText("1");
         jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -262,6 +286,7 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         jButton19.setBackground(new java.awt.Color(255, 255, 255));
         jButton19.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 24)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(89, 97, 104));
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btn3.png"))); // NOI18N
         jButton19.setText("0");
         jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -275,6 +300,10 @@ public class CalculatorApp extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
